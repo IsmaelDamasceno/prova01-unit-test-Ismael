@@ -10,7 +10,7 @@ test("Diminuir dois valores válidos", async () => {
 
 test("Multiplicar dois valores válidos", async () => {
   expect(multiplicar(5, 10)).toStrictEqual(50);
-});
+});//
 
 test("Dividir dois valores válidos", async () => {
   expect(dividir(20, 10)).toStrictEqual(2);
