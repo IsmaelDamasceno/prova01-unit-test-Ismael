@@ -1,4 +1,3 @@
-
 const TextoUtils = require("../src/textoUtils");
 
 describe("Texto Utils", () => {
