@@ -661,11 +661,13 @@ describe("order", () => {
             const order = getOrder();
 
             order.addItem(createProduct(1, 100), 2);
+
             order.applyCoupon({
                 code: "SAVE10",
                 type: "percentage",
                 value: 10
             });
+
             order.setShipping(15);
 
             expect(order.getSummary()).toEqual({
@@ -675,7 +677,7 @@ describe("order", () => {
                 discount: 20,
                 shipping: 15,
                 tax: 18,
-                total: 233,
+                total: 213,
                 status: "pending"
             });
         });
